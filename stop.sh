@@ -1,3 +1,3 @@
-container=$1
-
-docker stop $container && docker rm $container
+for container in $*; do
+    docker stop $container && docker rm $container
+done
