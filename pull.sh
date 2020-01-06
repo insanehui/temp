@@ -1,4 +1,5 @@
 container=$1
 tag=$2
+host=$3
 
-docker pull registry.cn-beijing.aliyuncs.com/cloudtogo-offical/$container:$tag
+docker pull $host/$container:$tag
